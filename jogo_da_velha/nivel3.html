@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nível 2 - Bandeiras</title>
+</head>
+<body>
+    <main>
+    <div id="conteiner-principal">
+        <div id="menuInicial">
+            <p class="texto">Nome do Jogador 1: <input type="text" id="jogador1Input" maxlength="20"></p>
+            <p class="texto">Nome do Jogador 2: <input type="text" id="jogador2Input" maxlength="20"></p>
+            <p class="texto">Jogador 1, selecione o símbolo:            
+                <button id="botaoX" class="simbolo" onclick="selecionarSimbolo('X', 'jogador1');">X</button>
+                <button id="botaoO" class="simbolo" onclick="selecionarSimbolo('O', 'jogador1');">O</button>
+            </p>
+            <br>
+            <div id="botoes-principal">
+                <button id="iniciarJogo" class="botao" onclick="iniciarJogo(); nivel3()">INICIAR JOGO</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tabuleiro-container">
+        <div id="tabuleiro" style="display: none;">
+            <p id="nomeJogadorAtual"></p>
+            <div class="linha">
+                <button id="quadrado1" class="quadrado" onclick="realizarJogada(1)"><img src="" alt=""></button>
+                <button id="quadrado2" class="quadrado" onclick="realizarJogada(2)"><img src="" alt=""></button>
+                <button id="quadrado3" class="quadrado" onclick="realizarJogada(3)"><img src="" alt=""></button>
+            </div>
+            <br>
+            <div class="linha">
+                <button id="quadrado4" class="quadrado" onclick="realizarJogada(4)"><img src="" alt=""></button>
+                <button id="quadrado5" class="quadrado" onclick="realizarJogada(5)"><img src="" alt=""></button>
+                <button id="quadrado6" class="quadrado" onclick="realizarJogada(6)"><img src="" alt=""></button>
+            </div>
+            <br>
+            <div class="linha">
+                <button id="quadrado7" class="quadrado" onclick="realizarJogada(7)"><img src="" alt=""></button>
+                <button id="quadrado8" class="quadrado" onclick="realizarJogada(8)"><img src="" alt=""></button>
+                <button id="quadrado9" class="quadrado" onclick="realizarJogada(9)"><img src="" alt=""></button>
+            </div>
+        </div>
+
+    <nav>
+        <div id="jogoResultado">
+            <p class="textoResultado"></p>
+            <button id="reiniciarJogo" class="botao" onclick="reiniciarJogo(); nivel3()">REINICIAR JOGO</button>
+            <a href="index.html"> <button id="voltarInicial" class="botao" name="voltar">PÁGINA INICIAL</button> </a>
+        </div>
+    </nav>
+
+    </div>
+
+    
+
+    </main>
+
+    <script src="javascript/nivel.js"></script>
+</body>
+</html>

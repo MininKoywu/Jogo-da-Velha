@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ms+Madi&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+body {
+    background-image: url('../imagens/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, button, a, p{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Ms Madi', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Shadows Into Light', cursive;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 90px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #85E348;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, #conteiner-principal, #jogoResultado, #reiniciarJogo, #voltarInicial, #menuInicial input, .simbolo, .quadrado {
+    border-radius: 5px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+
+.img-niveis, .botao, .texto{
+    border-radius: 10px;
+}
+
+.img-niveis {
+    width: 200px;
+    height: auto;
+}
+
+.botao {
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px 20px;
+    padding: 20px 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.botao, .simbolo, td, .img-niveis, #menuInicial input .simbolo-style {
+    transition: transform 0.3s ease;
+}
+
+.botao:hover, .simbolo:hover, td:hover, .simbolo-style:hover {
+    transform: scale(1.1);
+}
+
+.texto:hover, .simbolo-style:hover {
+    color: #59bf14;
+}
+
+.nivel1, .nivel2, .nivel3 {
+    width: 200px;
+    height: 100px;
+    font-size: 23px;
+    margin: 10px 20px;
+    padding: 10px 10px;
+    display: block;
+}
+
+.nivel1:hover {
+    background-color: #53a8da;
+}
+
+.nivel2:hover {
+    background-color: #0136aa;
+}
+
+.nivel3:hover {
+    background-color: #dd02c0;
+}
+
+#botoes-principal {
+    display: inline-block;
+}
+
+#conteiner-principal {
+    align-content: center;
+    align-items: center;
+    border: 2px solid #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conteiner-niveis {
+    max-height: 570px;
+}
+
+#reiniciar {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reiniciar:hover {
+    background-color: #555;
+}
+
+.botao1:hover {
+    background-color: #0a93fb;
+}
+
+.botao2:hover {
+    background-color: #f30a0a;
+}
+
+.botao3:hover {
+    background-color: #59bf14;
+}
+
+.imagem-principal {
+    height: auto;
+    max-width: 20%;
+}
+
+.texto {
+    transition: color 0.3s;
+    padding: 20px;
+    background-color: #333;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.conteiner-niveil1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.simbolo {
+    background-color: #333;
+    border: 2px solid #f6f6f6;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.simbolo:hover {
+    background-color: #59bf14;
+}
+
+.selecionado {
+    background-color: #59bf14;
+}
+
+#menuInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuInicial input {
+    background-color: #333;
+    border: 2px solid #f6f6f6;
+    font-size: 15px;
+    color: #f6f6f6;
+}
+
+#menuInicial input:hover {
+    border-color: #59bf14;
+}
+
+#tabuleiro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#tabuleiro {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f6f6f6;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nomeJogadorAtual {
+    font-size: 30px;
+    background-color: #333;
+    width: auto;
+    border: 2px solid #f6f6f6;
+    text-align: center;
+}
+
+.quadrado img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.simbolo-style {
+    font-size: 90px;
+}
+
+#reiniciarJogo, #voltarInicial {
+    background-color: #179cff;
+    border: 4px solid #f6f6f6;
+}
+
+#reiniciarJogo:hover, #voltarInicial:hover {
+    background-color: #0136aa;
+}
+
+#jogoResultado {
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border: 5px solid #f6f6f6;
+    padding: 60px;
+    width: auto;
+    height: auto;
+    background: linear-gradient(to bottom, #179cff, #85E348);
+    overflow: auto;
+}
